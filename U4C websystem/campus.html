@@ -1,0 +1,247 @@
+
+<html>
+<head>
+<title>Campus</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+body { font-family: Arial; margin:0; padding:0; }
+
+header { display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#f48b4a; }
+
+nav a { margin-left:15px; text-decoration:none; color:black; font-weight:bold; background:#bdf26d; padding:8px 18px; border-radius:20px; }
+
+h1.title { text-align:center; margin-top:20px; }
+
+.line { width:80%; height:2px; background:black; margin:10px auto; }
+
+.campus-container { display:flex; gap:20px; padding:20px; }
+
+.floor-menu { flex:1; display:flex; flex-direction:column; gap:10px; }
+
+.floor-menu button {
+padding:12px 20px;
+font-size:16px;
+font-weight:bold;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background: linear-gradient(135deg,#f48b4a,#f9c67a);
+transition:0.3s;
+}
+
+.floor-menu button:hover{
+background: linear-gradient(135deg,#f9c67a,#f48b4a);
+transform:scale(1.05);
+}
+
+.campus-pic{
+flex:3;
+background:#ffe599;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+min-height:400px;
+border-radius:8px;
+}
+
+.room-section{
+display:none;
+text-align:center;
+}
+
+.room-section img{
+max-width:100%;
+border:2px solid #333;
+border-radius:8px;
+margin-top:20px;
+}
+
+.room-button,.back-button{
+display:inline-block;
+padding:10px 20px;
+margin:5px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.room-button{
+background:linear-gradient(135deg,#bdf26d,#8fcf3c);
+}
+
+.room-button:hover{
+background:linear-gradient(135deg,#8fcf3c,#bdf26d);
+transform:scale(1.05);
+}
+
+.back-button{
+background:linear-gradient(135deg,#6fa8dc,#3d85c6);
+color:white;
+}
+
+.back-button:hover{
+background:linear-gradient(135deg,#3d85c6,#6fa8dc);
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Logo / Title</div>
+
+<nav>
+<a href="about.html">About</a>
+<a href="campus.html">Campus</a>
+<a href="department.html">Department</a>
+</nav>
+</header>
+
+<h1 class="title">Campus</h1>
+<div class="line"></div>
+
+<div class="campus-container">
+
+<!-- LEFT FLOOR MENU -->
+
+<div class="floor-menu">
+
+<button onclick="showSection('floor1')">Ground Floor</button>
+<button onclick="showSection('floor2')">2nd Floor</button>
+<button onclick="showSection('floor3')">3rd Floor</button>
+<button onclick="showSection('floor4')">4th Floor</button>
+
+<button onclick="showSection('entrance')">Entrance</button>
+<button onclick="showSection('canteen')">Canteen</button>
+<button onclick="showSection('social')">Social Hall</button>
+<button onclick="showSection('covered')">Covered Court</button>
+
+</div>
+
+<!-- RIGHT CONTENT -->
+
+<div class="campus-pic">
+
+<!-- FLOOR 1 -->
+
+<div id="floor1" class="room-section">
+<h3>Ground Floor</h3>
+
+<button class="room-button" onclick="showRoom('room101')">101</button>
+<button class="room-button" onclick="showRoom('room102')">102</button>
+<button class="room-button" onclick="showRoom('room103')">103</button>
+<button class="room-button" onclick="showRoom('room104')">104</button>
+<button class="room-button" onclick="showRoom('room105')">105</button>
+
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<!-- FLOOR 2 -->
+
+<div id="floor2" class="room-section">
+<h3>2nd Floor</h3>
+
+<button class="room-button">201</button>
+<button class="room-button">202</button>
+<button class="room-button">203</button>
+<button class="room-button">204</button>
+<button class="room-button">205</button>
+<button class="room-button">206</button>
+<button class="room-button">207</button>
+<button class="room-button">208</button>
+
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<!-- FLOOR 3 -->
+
+<div id="floor3" class="room-section">
+<h3>3rd Floor</h3>
+
+<button class="room-button">301</button>
+<button class="room-button">302</button>
+<button class="room-button">303</button>
+<button class="room-button">304</button>
+<button class="room-button">305</button>
+<button class="room-button">306</button>
+<button class="room-button">307</button>
+<button class="room-button">308</button>
+<button class="room-button">309</button>
+<button class="room-button">310</button>
+
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<!-- FLOOR 4 -->
+
+<div id="floor4" class="room-section">
+<h3>4th Floor</h3>
+
+<button class="room-button">401</button>
+<button class="room-button">402</button>
+<button class="room-button">403</button>
+<button class="room-button">404</button>
+<button class="room-button">405</button>
+<button class="room-button">406</button>
+<button class="room-button">407</button>
+<button class="room-button">408</button>
+<button class="room-button">409</button>
+<button class="room-button">410</button>
+
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<!-- DIRECT PICTURE LOCATIONS -->
+
+<div id="entrance" class="room-section">
+<h3>Entrance</h3>
+<img src="images/entrance.jpg" alt="Entrance">
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<div id="canteen" class="room-section">
+<h3>Canteen</h3>
+<img src="images/canteen.jpg" alt="Canteen">
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<div id="social" class="room-section">
+<h3>Social Hall</h3>
+<img src="images/socialhall.jpg" alt="Social Hall">
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+<div id="covered" class="room-section">
+<h3>Covered Court</h3>
+<img src="images/coveredcourt.jpg" alt="Covered Court">
+<button class="back-button" onclick="showSection('')">⬅ Back</button>
+</div>
+
+</div>
+</div>
+
+<footer>
+Mga Social ng UCC
+</footer>
+
+<script>
+
+function showSection(id){
+document.querySelectorAll('.room-section').forEach(sec=>sec.style.display='none');
+if(id) document.getElementById(id).style.display='block';
+}
+
+function showRoom(id){
+document.querySelectorAll('.room-section').forEach(sec=>sec.style.display='none');
+document.getElementById(id).style.display='block';
+}
+
+</script>
+
+</body>
+</html>
