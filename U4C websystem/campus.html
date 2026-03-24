@@ -3,97 +3,12 @@
 <head>
 <title>Campus</title>
 <link rel="stylesheet" href="style.css">
-<style>
-
-body { font-family: Arial; margin:0; padding:0; }
-
-header { display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#f48b4a; }
-
-nav a { margin-left:15px; text-decoration:none; color:black; font-weight:bold; background:#bdf26d; padding:8px 18px; border-radius:20px; }
-
-h1.title { text-align:center; margin-top:20px; }
-
-.line { width:80%; height:2px; background:black; margin:10px auto; }
-
-.campus-container { display:flex; gap:20px; padding:20px; }
-
-.floor-menu { flex:1; display:flex; flex-direction:column; gap:10px; }
-
-.floor-menu button {
-padding:12px 20px;
-font-size:16px;
-font-weight:bold;
-border:none;
-border-radius:8px;
-cursor:pointer;
-background: linear-gradient(135deg,#f48b4a,#f9c67a);
-transition:0.3s;
-}
-
-.floor-menu button:hover{
-background: linear-gradient(135deg,#f9c67a,#f48b4a);
-transform:scale(1.05);
-}
-
-.campus-pic{
-flex:3;
-background:#ffe599;
-display:flex;
-flex-direction:column;
-align-items:center;
-padding:20px;
-min-height:400px;
-border-radius:8px;
-}
-
-.room-section{
-display:none;
-text-align:center;
-}
-
-.room-section img{
-max-width:100%;
-border:2px solid #333;
-border-radius:8px;
-margin-top:20px;
-}
-
-.room-button,.back-button{
-display:inline-block;
-padding:10px 20px;
-margin:5px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-weight:bold;
-}
-
-.room-button{
-background:linear-gradient(135deg,#bdf26d,#8fcf3c);
-}
-
-.room-button:hover{
-background:linear-gradient(135deg,#8fcf3c,#bdf26d);
-transform:scale(1.05);
-}
-
-.back-button{
-background:linear-gradient(135deg,#6fa8dc,#3d85c6);
-color:white;
-}
-
-.back-button:hover{
-background:linear-gradient(135deg,#3d85c6,#6fa8dc);
-transform:scale(1.05);
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">Logo / Title</div>
+<div class="logo">UCC Information Portal</div>
 
 <nav>
 <a href="index.html">About</a>
@@ -107,141 +22,145 @@ transform:scale(1.05);
 
 <div class="campus-container">
 
-<!-- LEFT FLOOR MENU -->
-
+<!-- LEFT MENU -->
 <div class="floor-menu">
 
-<button onclick="showSection('floor1')">Ground Floor</button>
-<button onclick="showSection('floor2')">2nd Floor</button>
-<button onclick="showSection('floor3')">3rd Floor</button>
-<button onclick="showSection('floor4')">4th Floor</button>
+<!-- GROUND FLOOR -->
+<details class="floor" name="floor">
+<summary class="floor-btn">Ground Floor</summary>
 
-<button onclick="showSection('entrance')">Entrance</button>
-<button onclick="showSection('canteen')">Canteen</button>
-<button onclick="showSection('social')">Social Hall</button>
-<button onclick="showSection('covered')">Covered Court</button>
+<div class="room-list">
+<a href="#room101" class="room-link">Room 101</a>
+<a href="#room102" class="room-link">Room 102</a>
+<a href="#room103" class="room-link">Room 103</a>
+<a href="#room104" class="room-link">Room 104</a>
+<a href="#room105" class="room-link">Room 105</a>
+<a href="#room106" class="room-link">Room 106</a>
+<a href="#room107" class="room-link">Room 107</a>
+<a href="#room108" class="room-link">Room 108</a>
+<a href="#room109" class="room-link">Room 109</a>
+<a href="#room110" class="room-link">Room 110</a>
+</div>
+
+</details>
+
+<!-- 2ND FLOOR -->
+<details class="floor" name="floor">
+<summary class="floor-btn">2nd Floor</summary>
+
+<div class="room-list">
+<a href="#room201" class="room-link">Room 201</a>
+<a href="#room202" class="room-link">Room 202</a>
+<a href="#room203" class="room-link">Room 203</a>
+<a href="#room204" class="room-link">Room 204</a>
+<a href="#room205" class="room-link">Room 205</a>
+<a href="#room206" class="room-link">Room 206</a>
+<a href="#room207" class="room-link">Room 207</a>
+<a href="#room208" class="room-link">Room 208</a>
+<a href="#room209" class="room-link">Room 209</a>
+<a href="#room210" class="room-link">Room 210</a>
+</div>
+
+</details>
+
+<!-- 3RD FLOOR -->
+<details class="floor" name="floor">
+<summary class="floor-btn">3rd Floor</summary>
+
+<div class="room-list">
+<a href="#room301" class="room-link">Room 301</a>
+<a href="#room302" class="room-link">Room 302</a>
+<a href="#room303" class="room-link">Room 303</a>
+<a href="#room304" class="room-link">Room 304</a>
+<a href="#room305" class="room-link">Room 305</a>
+<a href="#room306" class="room-link">Room 306</a>
+<a href="#room307" class="room-link">Room 307</a>
+<a href="#room308" class="room-link">Room 308</a>
+<a href="#room309" class="room-link">Room 309</a>
+<a href="#room310" class="room-link">Room 310</a>
+</div>
+
+</details>
+
+<!-- 4TH FLOOR -->
+<details class="floor" name="floor">
+<summary class="floor-btn">4th Floor</summary>
+
+<div class="room-list">
+<a href="#room401" class="room-link">Room 401</a>
+<a href="#room402" class="room-link">Room 402</a>
+<a href="#room403" class="room-link">Room 403</a>
+<a href="#room404" class="room-link">Room 404</a>
+<a href="#room405" class="room-link">Room 405</a>
+<a href="#room406" class="room-link">Room 406</a>
+<a href="#room407" class="room-link">Room 407</a>
+<a href="#room408" class="room-link">Room 408</a>
+<a href="#room409" class="room-link">Room 409</a>
+<a href="#room410" class="room-link">Room 410</a>
+</div>
+
+</details>
+
+<!-- DIRECT BUTTONS -->
+<details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#canteen'">Canteen</summary>
+</details>
+
+<details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#covered'">Covered Court</summary>
+</details>
 
 </div>
 
-<!-- RIGHT CONTENT -->
-
+<!-- RIGHT SIDE DISPLAY -->
 <div class="campus-pic">
 
-<!-- FLOOR 1 -->
+<!-- SAMPLE ROOMS (you can duplicate easily) -->
 
-<div id="floor1" class="room-section">
-<h3>Ground Floor</h3>
-
-<button class="room-button" onclick="showRoom('room101')">101</button>
-<button class="room-button" onclick="showRoom('room102')">102</button>
-<button class="room-button" onclick="showRoom('room103')">103</button>
-<button class="room-button" onclick="showRoom('room104')">104</button>
-<button class="room-button" onclick="showRoom('room105')">105</button>
-
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
+<div id="room101" class="room-section">
+<h3>Room 101</h3>
+<img src="images/room101.jpg" onerror="this.src='placeholder.jpg'">
 </div>
 
-<!-- FLOOR 2 -->
-
-<div id="floor2" class="room-section">
-<h3>2nd Floor</h3>
-
-<button class="room-button">201</button>
-<button class="room-button">202</button>
-<button class="room-button">203</button>
-<button class="room-button">204</button>
-<button class="room-button">205</button>
-<button class="room-button">206</button>
-<button class="room-button">207</button>
-<button class="room-button">208</button>
-
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
+<div id="room102" class="room-section">
+<h3>Room 102</h3>
+<img src="images/room102.jpg" onerror="this.src='placeholder.jpg'">
 </div>
 
-<!-- FLOOR 3 -->
-
-<div id="floor3" class="room-section">
-<h3>3rd Floor</h3>
-
-<button class="room-button">301</button>
-<button class="room-button">302</button>
-<button class="room-button">303</button>
-<button class="room-button">304</button>
-<button class="room-button">305</button>
-<button class="room-button">306</button>
-<button class="room-button">307</button>
-<button class="room-button">308</button>
-<button class="room-button">309</button>
-<button class="room-button">310</button>
-
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
+<div id="room201" class="room-section">
+<h3>Room 201</h3>
+<img src="images/room201.jpg" onerror="this.src='placeholder.jpg'">
 </div>
 
-<!-- FLOOR 4 -->
-
-<div id="floor4" class="room-section">
-<h3>4th Floor</h3>
-
-<button class="room-button">401</button>
-<button class="room-button">402</button>
-<button class="room-button">403</button>
-<button class="room-button">404</button>
-<button class="room-button">405</button>
-<button class="room-button">406</button>
-<button class="room-button">407</button>
-<button class="room-button">408</button>
-<button class="room-button">409</button>
-<button class="room-button">410</button>
-
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
+<div id="room301" class="room-section">
+<h3>Room 301</h3>
+<img src="images/room301.jpg" onerror="this.src='placeholder.jpg'">
 </div>
 
-<!-- DIRECT PICTURE LOCATIONS -->
+<div id="room401" class="room-section">
+<h3>Room 401</h3>
+<img src="images/room401.jpg" onerror="this.src='placeholder.jpg'">
+</div>
 
-<div id="entrance" class="room-section">
-<h3>Entrance</h3>
-<img src="images/entrance.jpg" alt="Entrance">
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
+<!-- DIRECT AREAS -->
+
+<div id="covered" class="room-section">
+<h3>Covered Court</h3>
+<img src="images/coveredcourt.jpg" onerror="this.src='placeholder.jpg'">
 </div>
 
 <div id="canteen" class="room-section">
 <h3>Canteen</h3>
-<img src="images/canteen.jpg" alt="Canteen">
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
-</div>
-
-<div id="social" class="room-section">
-<h3>Social Hall</h3>
-<img src="images/socialhall.jpg" alt="Social Hall">
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
-</div>
-
-<div id="covered" class="room-section">
-<h3>Covered Court</h3>
-<img src="images/coveredcourt.jpg" alt="Covered Court">
-<button class="back-button" onclick="showSection('')">⬅ Back</button>
+<img src="images/canteen.jpg" onerror="this.src='placeholder.jpg'">
 </div>
 
 </div>
+
 </div>
 
 <footer>
 Mga Social ng UCC
 </footer>
-
-<script>
-
-function showSection(id){
-document.querySelectorAll('.room-section').forEach(sec=>sec.style.display='none');
-if(id) document.getElementById(id).style.display='block';
-}
-
-function showRoom(id){
-document.querySelectorAll('.room-section').forEach(sec=>sec.style.display='none');
-document.getElementById(id).style.display='block';
-}
-
-</script>
 
 </body>
 </html>
