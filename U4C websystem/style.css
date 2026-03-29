@@ -9,7 +9,7 @@ background-repeat:no-repeat;
 background-attachment:fixed;
 
 /* fallback */
-background-color:#000;
+background-color: #2fa84f;
 }
 
 /* HEADER */
@@ -199,11 +199,15 @@ text-decoration:none;
 /* CAMPUS */
 .campus-container{
 display:flex;
-gap:20px;
+gap:24px;
+align-items: flex-start;
 }
 
 .floor-menu{
-flex:1;
+flex: 0 0 200px;
+display: flex;
+flex-direction: column;
+gap: 8px;   
 }
 
 .floor summary{
@@ -217,12 +221,24 @@ display:none;
 
 .floor-btn{
 display:block;
-padding:12px;
+padding: 11px 16px;
 background:#2ecc71;
 color:white;
+font-weight: bold;
+font-size: 14px;
 border-radius:8px;
 margin-bottom:8px;
 font-weight:bold;
+border: 2px solid transparent;
+transition: 0.3s;
+cursor: pointer;
+}
+
+.floor-btn:hover {
+  background: #27ae60;
+  border-color: #1f7a3a;
+  color: #14582b;
+  box-shadow: 0 0 0 3px rgba(31, 122, 58, 0.2);
 }
 
 .room-list{
@@ -230,6 +246,7 @@ margin-left:10px;
 display:flex;
 flex-direction:column;
 gap:5px;
+padding: 8px;
 }
 
 .room-link{
@@ -239,6 +256,15 @@ border-radius:6px;
 text-decoration:none;
 color:black;
 font-weight:bold;
+border: 2px solid transparent;
+transition: 0.3s;
+}
+
+.room-link:hover {
+  background: #e8f5ed;
+  border-color: #2fa84f;
+  color: #14582b;
+  box-shadow: 0 0 0 3px rgba(47, 168, 79, 0.2);
 }
 
 
