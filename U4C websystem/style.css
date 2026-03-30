@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family:Arial;
+font-family: 'Source Sans 3', sans-serif;
   
 background-image:url(Uccback.jpeg);
 background-size:cover;
@@ -10,6 +10,10 @@ background-attachment:fixed;
 
 /* fallback */
 background-color: #2fa84f;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
 
 /* HEADER */
@@ -70,7 +74,7 @@ margin:20px auto;
 
 
 /* GLASS CONTAINER EFFECT */
-.about,
+
 .updates,
 .department-container,
 .campus-container{
@@ -81,10 +85,24 @@ padding:20px;
 box-shadow:0 4px 15px rgba(0,0,0,0.3);
 }
 
+.about{
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+
+}
+
 
 /* ABOUT */
 .about{
 text-align:center;
+
 }
 
 .about-text{
@@ -139,6 +157,12 @@ background:#1f7a3a;
 text-align:center;
 padding:30px;
 color:white;
+}
+
+.social-links {
+display:flex;
+flex-direction:column;
+gap: 20px;
 }
 
 .social-links a{
