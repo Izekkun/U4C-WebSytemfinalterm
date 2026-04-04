@@ -343,3 +343,443 @@ font-size: larger;
 .program-card p{
 line-height: 1.6;
 }
+ 
+.dept-wrapper {
+  display: flex;
+  gap: 0;
+  background: rgba(255,255,255,0.80);
+  border-radius: 14px;
+  margin: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,1);
+  min-height: 520px;
+}
+
+.dept-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  flex-shrink: 0;
+  background: #1a5c2d;
+}
+ 
+.dept-tab-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 20px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border-left: 4px solid transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+ 
+.dept-tab-link i {
+  width: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+ 
+.dept-tab-link:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-left-color: #2ecc71;
+}
+
+.dept-tabs hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  margin: 0 16px;
+}
+
+.dept-content {
+  flex: 1;
+  padding: 30px 35px;
+  overflow-y: auto;
+}
+
+.dept-panel {
+  display: none;
+}
+
+.dept-panel#acad {
+  display: block;
+}
+ 
+.dept-panel:target {
+  display: block;
+}
+
+#admin:target ~ #acad,
+body:has(#admin:target) #acad {
+  display: none;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e8f5ec;
+}
+ 
+.panel-header i {
+  font-size: 22px;
+  color: #1a5c2d;
+  background: #e8f5ec;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.panel-header h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #1a5c2d;
+  font-size: 22px;
+}
+
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.program-card {
+  background: #fff;
+  padding: 20px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-left: 5px solid #1f7a3a;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+ 
+.program-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+ 
+.program-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+ 
+.prog-badge {
+  background: #1a5c2d;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  white-space: nowrap;
+}
+ 
+.program-card h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #1a1a1a;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+}
+ 
+.program-card p {
+  margin: 0;
+  line-height: 1.65;
+  color: #444;
+  font-size: 14px;
+}
+
+.admin-president {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e8f5ec, #f0faf3);
+  border-radius: 12px;
+  margin-bottom: 28px;
+  border: 1px solid #c8e6d0;
+}
+ 
+.admin-president img {
+  width: 110px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #1a5c2d;
+  margin-bottom: 12px;
+}
+ 
+.admin-president h3 {
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+  font-size: 17px;
+  font-family: 'Playfair Display', serif;
+}
+ 
+.admin-president p {
+  margin: 0;
+  color: #1a5c2d;
+  font-weight: 600;
+  font-size: 13px;
+}
+ 
+.admin-section-title {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 14px 0;
+}
+ 
+.officials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+ 
+.official-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 14px;
+  transition: box-shadow 0.2s;
+}
+ 
+.official-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+}
+ 
+.official-card img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #c8e6d0;
+  flex-shrink: 0;
+}
+ 
+.official-card .official-info h4 {
+  margin: 0 0 3px 0;
+  font-size: 13.5px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+ 
+.official-card .official-info .role {
+  font-size: 12px;
+  color: #1a5c2d;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+ 
+.official-card .official-info .subrole {
+  font-size: 11.5px;
+  color: #888;
+  margin: 0;
+}
+ 
+
+
+.college-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+ 
+.college-btn {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 20px;
+  background: #f0faf3;
+  border: 2px solid #c8e6d0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #1a5c2d;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+ 
+.college-btn i {
+  font-size: 18px;
+}
+ 
+.college-btn:hover {
+  background: #1a5c2d;
+  color: #fff;
+  border-color: #1a5c2d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26,92,45,0.2);
+}
+
+.college-panel {
+  display: none;
+}
+ 
+.college-panel:target {
+  display: block;
+}
+
+.college-panel:target ~ .college-buttons,
+#clas:target ~ .college-buttons,
+#ced:target ~ .college-buttons {
+  display: none;
+}
+
+.college-dean-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #1a5c2d, #2ecc71);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 22px;
+  color: #fff;
+}
+ 
+.college-dean-bar img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.5);
+  flex-shrink: 0;
+}
+ 
+.dean-label {
+  margin: 0 0 2px 0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+ 
+.dean-name {
+  margin: 0 0 2px 0;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Source Sans 3', sans-serif;
+}
+ 
+.dean-college {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.back-to-colleges {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  padding: 9px 18px;
+  background: #1a5c2d;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: background 0.2s;
+}
+ 
+.back-to-colleges:hover {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.campus-info-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+ 
+.campus-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+  min-width: 180px;
+  background: #f9fafb;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+ 
+.campus-info-item i {
+  font-size: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+ 
+.info-label {
+  margin: 0 0 3px 0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+}
+ 
+.info-value {
+  margin: 0;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: 600;
+  line-height: 1.4;
+}
+ 
+.map-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.program-card h4 {
+  font-size: 20px;
+}
+
+.program-card p {
+  font-size: 18px;
+}
+
+.prog-badge {
+  font-size: 18px;
+}
+
+.dean-name {
+  font-size: 18px;
+}
+
+.dean-label {
+  font-size: 18px;
+}
+
+.dean-college {
+  font-size: 15px;
+}
+
