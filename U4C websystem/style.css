@@ -71,15 +71,23 @@ margin:20px auto;
  
  
 /* GLASS CONTAINER EFFECT */
- 
-.updates,
-.department-container{
-background:rgba(255,255,255,0.15);
-backdrop-filter: blur(10px);
-border-radius:12px;
-margin:20px;
-padding:20px;
-box-shadow:0 4px 15px rgba(0,0,0,0.3);
+
+.department-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.updates {
+  background: #ffffff; /* Changes color to solid white */
+  backdrop-filter: none; /* Removes the blur */
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
  
 .about{
