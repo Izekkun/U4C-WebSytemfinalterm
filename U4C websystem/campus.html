@@ -36,7 +36,7 @@
 
 <!-- GROUND FLOOR -->
 <details class="floor" name="floor">
-<summary class="floor-btn">Ground Floor</summary>
+<summary class="floor-btn">• Ground Floor</summary>
 
 <div class="room-list">
 <a href="#room101" class="room-link">Room 101</a>
@@ -55,14 +55,14 @@
 
 <!-- 2ND FLOOR -->
 <details class="floor" name="floor">
-<summary class="floor-btn">2nd Floor</summary>
+<summary class="floor-btn">• 2nd Floor</summary>
 
 <div class="room-list">
 <a href="#room201" class="room-link">Room 201</a>
 <a href="#room202" class="room-link">Room 202</a>
 <a href="#room203" class="room-link">Room 203</a>
 <a href="#room204" class="room-link">Room 204</a>
-<a href="#room205" class="room-link">Room 205</a>
+<a href="#room205" class="room-link">Clinc</a>
 <a href="#room206" class="room-link">Room 206</a>
 <a href="#room207" class="room-link">Room 207</a>
 <a href="#room208" class="room-link">Room 208</a>
@@ -74,7 +74,7 @@
 
 <!-- 3RD FLOOR -->
 <details class="floor" name="floor">
-<summary class="floor-btn">3rd Floor</summary>
+<summary class="floor-btn">• 3rd Floor</summary>
 
 <div class="room-list">
 <a href="#room301" class="room-link">Room 301</a>
@@ -93,7 +93,7 @@
 
 <!-- 4TH FLOOR -->
 <details class="floor" name="floor">
-<summary class="floor-btn">4th Floor</summary>
+<summary class="floor-btn">• 4th Floor</summary>
 
 <div class="room-list">
 <a href="#room401" class="room-link">Room 401</a>
@@ -109,18 +109,41 @@
 </div>
 
 </details>
+<div class="lineSeparator">-Campus Areas-</div>
 
-<!-- DIRECT BUTTONS -->
 <details class="floor" name="floor">
-<summary class="floor-btn" onclick="location.href='#canteen'">Canteen</summary>
+<summary class="floor-btn" onclick="location.href='#canteen'">• Canteen</summary>
 </details>
 
 <details class="floor" name="floor">
-<summary class="floor-btn" onclick="location.href='#covered'">Covered Court</summary>
+<summary class="floor-btn" onclick="location.href='#covered'">• Covered Court</summary>
 </details>
 
 <details class="floor" name="floor">
-<summary class="floor-btn" onclick="location.href='#socialhall'">Social Hall</summary>
+<summary class="floor-btn" onclick="location.href='#socialhall'">• Social Hall</summary>
+</details>
+
+<!-- SEPARATOR -->
+<div class="lineSeparator">-Office Directories-</div>
+
+<details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#registrar'">• Registrar's Office</summary>
+</details>
+
+<details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#library'">• Library</summary>
+</details>
+
+<details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#guidance'">• Guidance Office and   Clinic</summary>
+</details>
+
+<!-- <details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#clinic'">• Clinic</summary>
+</details> -->
+
+<details class="floor" name="floor">
+<summary class="floor-btn" onclick="location.href='#emergency'">• Emergency Exit</summary>
 </details>
 
 </div>
@@ -133,6 +156,7 @@
 <div id="room101" class="room-section">
 <h3>Room 101</h3>
 <img src="images/room101.jpg" onerror="this.src='placeholder.jpg'">
+
 </div>
 
 <div id="room102" class="room-section">
@@ -204,8 +228,9 @@
 </div>
 
 <div id="room205" class="room-section">
-<h3>Room 205</h3>
+<h3>205</h3>
 <img src="pictures/205.jpg" onerror="this.src='placeholder.jpg'">
+<p>This room is used for lectures and can accommodate up to 40 students.</p>
 </div>
 
 <div id="room206" class="room-section">
@@ -343,18 +368,56 @@
 
 <div id="covered" class="room-section">
 <h3>Covered Court</h3>
-<img src="pictures/coveredcourt.jpg" onerror="this.src='pictures/coveredcourt.jpg'">
+<img src="pictures/coveredcourt.jpg" onerror="this.src='placeholder.jpg'">
+<p>Used for sports activities, university events, and assemblies.</p>
 </div>
 
 <div id="canteen" class="room-section">
 <h3>Canteen</h3>
-<img src="pictures/canteen.jpg" onerror="this.src='pictures/canteen.jpg'">
+<img src="pictures/canteen.jpg" onerror="this.src='placeholder.jpg'">
+<p>Serves affordable meals and snacks for students and staff throughout the school day.</p>
 </div>
 
 <div id="socialhall" class="room-section">
-<h3>SocialHall</h3>
-<img src="pictures/logo.jpg" onerror="this.src='pictures/socialhall.jpg'">
+<h3>Social Hall</h3>
+<img src="pictures/social.jpg" onerror="this.src='placeholder.jpg'">
+<p>Located at 5th Floor. A multi-purpose venue used for university events, seminars, and gatherings.</p>
 </div>
+
+<!-- OFFICE DIRECTORIES
+  ... means to add the exact location or where to find that specific office
+-->
+
+<div id="registrar" class="room-section">
+<h3>Registrar's Office</h3>
+<img src="pictures/105.jpg" onerror="this.src='placeholder.jpg'">
+<p>Located at 1st floor, Room 105. Handles enrollment, grades, and official documents.</p>
+</div>
+
+<div id="library" class="room-section">
+<h3>Library</h3>
+<img src="pictures/106.jpg" onerror="this.src='placeholder.jpg'">
+<p>Located at 1st floor, Room 106. Open to all students and staff for research and reading.</p>
+</div>
+
+<div id="guidance" class="room-section">
+<h3>Guidance Office and Clinic</h3>
+<img src="pictures/103.jpg" onerror="this.src='placeholder.jpg'">
+<p>Located at 1st floor, Room 103. Provides counseling and student support services. Also Provides medical assistance for students and staff.</p>
+</div>
+
+<!-- <div id="clinic" class="room-section">
+<h3>Clinic</h3>
+<img src="pictures/clinicfr.jpg" onerror="this.src='placeholder.jpg'">
+<p>Located at 1st floor, Room 103. Provides medical assistance for students and staff.</p>
+</div> -->
+
+<div id="emergency" class="room-section">
+<h3>Emergency Exit</h3>
+<img src="pictures/emergency.jpg" onerror="this.src='placeholder.jpg'">
+<p>Emergency exits are located at each floor of the building. In case of fire, earthquake, or any emergency, proceed calmly to the nearest exit and follow the designated evacuation route. Do not use the elevator during emergencies. Assembly area is located at the open ground area outside the building.</p>
+</div>
+
 
 
 
