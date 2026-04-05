@@ -70,7 +70,7 @@ margin:20px auto;
 }
  
  
-/* GLASS CONTAINER EFFECT */
+/* glass container */
 
 .department-container {
   background: rgba(255, 255, 255, 0.15);
@@ -82,8 +82,8 @@ margin:20px auto;
 }
 
 .updates {
-  background: #ffffff; /* Changes color to solid white */
-  backdrop-filter: none; /* Removes the blur */
+background: rgba(255,255,255,0.80);
+  backdrop-filter: none; 
   border-radius: 12px;
   margin: 20px;
   padding: 20px;
